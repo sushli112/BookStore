@@ -1,0 +1,103 @@
+
+
+<div class="collection">
+  <div>
+    <h1 class="ml-5">Currently Reading</h1>
+
+    <ul>
+      <li *ngFor="let book of currentReadList">
+        <img
+          class="collImage"
+          src="{{
+                book.image
+                }}"
+          alt="{{book.title}}"
+        />
+
+        <h2 class="card-title">{{ book.title }}</h2>
+        <h2 class="card-subtitle mb-2 text-muted">{{ book.author }}</h2>
+        <div class="col text-right">
+          <div ngbDropdown placement="top-right" class="d-inline-block">
+            <button
+              class="btn btn-outline-primary"
+              id="dropdownBasic2"
+              ngbDropdownToggle
+            ></button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+              <label for="">Move To ...</label>
+              <button (click)= "changeValue($event,book.id)" class="dropdown-item" value="currentlyReading"><i *ngIf="isMatchingStatus('currentlyReading',book.status)" class="fa fa-check" style="color:blue" ></i>Currently Reading</button>
+              <button (click)= "changeValue($event,book.id)" class="dropdown-item" value="wantToRead"><i *ngIf="isMatchingStatus('wantToRead',book.status)" class="fa fa-check" style="color:blue" ></i>Want To Read</button>
+              <button (click)= "changeValue($event,book.id)" class="dropdown-item" value="read"><i *ngIf="isMatchingStatus('read',book.status)" class="fa fa-check" style="color:blue" ></i>Read</button>
+              <button (click)= "changeValue($event,book.id)" class="dropdown-item" value="none"><i *ngIf="isMatchingStatus('none',book.status)" class="fa fa-check" style="color:blue" ></i>None</button>
+
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <h1 class="ml-5">Want To Read</h1>
+
+    <ul>
+      <li *ngFor="let book of wantToReadList">
+        <img
+          class="collImage"
+          src="{{
+                book.image
+                }}"
+          alt="{{book.title}}"
+        />
+
+        <h2 class="card-title">{{ book.title }}</h2>
+        <h2 class="card-subtitle mb-2 text-muted">{{ book.author }}</h2>
+        <div class="col text-right">
+          <div ngbDropdown placement="top-right" class="d-inline-block">
+            <button
+              class="btn btn-outline-primary"
+              id="dropdownBasic2"
+              ngbDropdownToggle
+            ></button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+                <label for="">Move To ...</label>
+                <button (click)= "changeValue($event,book.id)" class="dropdown-item" value="currentlyReading"><i *ngIf="isMatchingStatus('currentlyReading',book.status)" class="fa fa-check" style="color:blue" ></i>Currently Reading</button>
+                <button (click)= "changeValue($event,book.id)" class="dropdown-item" value="wantToRead"><i *ngIf="isMatchingStatus('wantToRead',book.status)" class="fa fa-check" style="color:blue" ></i>Want To Read</button>
+                <button (click)= "changeValue($event,book.id)" class="dropdown-item" value="read"><i *ngIf="isMatchingStatus('read',book.status)" class="fa fa-check" style="color:blue" ></i>Read</button>
+                <button (click)= "changeValue($event,book.id)" class="dropdown-item" value="none"><i *ngIf="isMatchingStatus('none',book.status)" class="fa fa-check" style="color:blue" ></i>None</button>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <div>
+      <h1 class="ml-5">Read</h1>
+
+      <ul>
+        <li *ngFor="let book of readList">
+          <img class="collImage" src="{{book.image}}" alt="{{book.title}}" />
+
+          <h2 class="card-title">{{ book.title }}</h2>
+          <h2 class="card-subtitle mb-2 text-muted">{{ book.author }}</h2>
+          <div class="col text-right">
+            <div ngbDropdown placement="top-right" class="d-inline-block">
+              <button
+                class="btn btn-outline-primary"
+                id="dropdownBasic2"
+                ngbDropdownToggle
+              ></button>
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+                  <label for="">Move To ...</label>
+                  <button (click)= "changeValue($event,book.id)" class="dropdown-item" value="currentlyReading"><i *ngIf="isMatchingStatus('currentlyReading',book.status)" class="fa fa-check" style="color:blue" ></i>Currently Reading</button>
+                  <button (click)= "changeValue($event,book.id)" class="dropdown-item" value="wantToRead"><i *ngIf="isMatchingStatus('wantToRead',book.status)" class="fa fa-check" style="color:blue" ></i>Want To Read</button>
+                  <button (click)= "changeValue($event,book.id)" class="dropdown-item" value="read"><i *ngIf="isMatchingStatus('read',book.status)" class="fa fa-check" style="color:blue" ></i>Read</button>
+                  <button (click)= "changeValue($event,book.id)" class="dropdown-item" value="none"><i *ngIf="isMatchingStatus('none',book.status)" class="fa fa-check" style="color:blue" ></i>None</button>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

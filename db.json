@@ -1,0 +1,102 @@
+{
+  "books": [
+    {
+      "title": "To Kill A MockingBird",
+      "image": "/assets/MockingBird.jpg",
+      "author": "HARPER LEE",
+      "status": "currentlyReading",
+      "id": 12
+    },
+    {
+      "title": "HARRY POTTER",
+      "image": "/assets/Harry-Potter.jpg",
+      "author": "J K ROWLING",
+      "status": "currentlyReading",
+      "id": 11
+    },
+    {
+      "title": "Nothing Like Love",
+      "image": "/assets/NothingLikeLove.jpg",
+      "author": "Sabrina Ramanan",
+      "status": "wantToRead",
+      "id": 10
+    },
+    {
+      "title": "The Reckoning",
+      "image": "/assets/TheReckoning.jpg",
+      "author": "John Grisham",
+      "status": "none",
+      "id": 9
+    },
+    {
+      "title": "BRIDA",
+      "image": "/assets/Brida.jpg",
+      "author": "PAULO COELHO",
+      "status": "wantToRead",
+      "id": 8
+    },
+    {
+      "title": "Love And Run",
+      "image": "/assets/LoveAndRun.jpg",
+      "author": "PAULA McLAIN",
+      "status": "read",
+      "id": 7
+    },
+    {
+      "title": "Red War",
+      "image": "/assets/RedWar.jpg",
+      "author": "Vince Flynn",
+      "status": "currentlyReading",
+      "id": 5
+    },
+    {
+      "title": "JASODA",
+      "image": "/assets/jasoda.jpg",
+      "author": "KIRAN NAGARKAR",
+      "status": "none",
+      "id": 6
+    },
+    {
+      "title": "The Lsst Ballad",
+      "image": "/assets/TheLastBallad.jpg",
+      "author": "WILEY CASH",
+      "status": "read",
+      "id": 1
+    },
+    {
+      "title": "One Indian Girl",
+      "image": "/assets/OneIndianGirl.jpg",
+      "author": "Chetan Bhagat",
+      "status": "read",
+      "id": 2
+    },
+    {
+      "title": "The Zahir",
+      "image": "/assets/TheZahir.jpg",
+      "author": "Paulo Coelho",
+      "status": "read",
+      "id": 3
+    },
+    {
+      "title": "Da Vinci Code",
+      "image": "/assets/DaVinciCode.jpg",
+      "author": "DAN BROWN",
+      "status": "none",
+      "id": 4
+    },
+    {
+      "title": "Adam & Hawa",
+      "image": "/assets/AdamHawa.jpg",
+      "author": "Aisya Sofea",
+      "status": "wantToRead",
+      "id": 13
+    },
+    {
+      "title": "Under Cover",
+      "image": "/assets/undervover.jpg",
+      "author": "DANIELLE FIELD",
+      "status": "none",
+      "id": 14
+    }
+  ]
+}
